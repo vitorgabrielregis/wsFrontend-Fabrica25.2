@@ -1,0 +1,87 @@
+.pokemon_container {
+  max-width: 550px;
+  margin: 30px auto;
+  padding: 20px;
+  background: linear-gradient(145deg, #f5f5f5, #ffffff);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  color: #333;
+  position: relative;
+  border: 4px solid #ffcb05;
+}
+
+.pokemon_name {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #ef5350;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px #000;
+}
+
+.pokemon_image {
+  margin: 20px 0;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border: 3px solid #3b4cca;
+  box-shadow: 0 0 20px rgba(59, 76, 202, 0.5);
+}
+
+.pokemon_types {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.pokemon_type {
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/*Tipos de Pokémon*/
+.type_grass { background-color: #78C850; }
+.type_fire { background-color: #F08030; }
+.type_water { background-color: #6890F0; }
+.type_bug { background-color: #A8B820; }
+.type_normal { background-color: #A8A878; }
+.type_poison { background-color: #A040A0; }
+.type_electric { background-color: #F8D030; }
+.type_ground { background-color: #E0C068; }
+.type_fairy { background-color: #EE99AC; }
+.type_fighting { background-color: #C03028; }
+.type_psychic { background-color: #F85888; }
+.type_rock { background-color: #B8A038; }
+.type_ghost { background-color: #705898; }
+.type_ice { background-color: #98D8D8; }
+.type_dragon { background-color: #7038F8; }
+.type_steel { background-color: #B8B8D0; }
+.type_dark { background-color: #705848; }
+.type_flying { background-color: #A890F0; }
+
+.pokemon_data {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+
+.pokemon_data_height, .pokemon_data_weight {
+  background: #f6f8fc;
+  border-radius: 15px;
+  padding: 15px 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section_heading {
+  margin-bottom: 8px;
+  color: #3b4cca;
+}
