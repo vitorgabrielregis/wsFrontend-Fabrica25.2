@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🕹️ wsFrontend-Fabrica25.2
 
-## Getting Started
+# Pokédex Next.js
 
-First, run the development server:
+Uma aplicação **Pokédex** desenvolvida com **Next.js 13** que consome a [PokeAPI](https://pokeapi.co/) para listar, pesquisar, favoritar e visualizar detalhes dos Pokémon.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Funcionalidades
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Listagem de Pokémon**: exibe os 100 primeiros Pokémon da PokeAPI.
+- **Pesquisa em tempo real**: filtro de Pokémon pelo nome.
+- **Detalhes individuais**: página dedicada para cada Pokémon, com tipo, peso, imagem e ID.
+- **Favoritos**: salve Pokémon no navegador usando **localStorage**, acessando-os pela página de favoritos.
+- **Design responsivo**: estilização com CSS Modules e layout moderno.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📂 Estrutura de Pastas
+├─ app/
+│ ├─ page.js # Página inicial com listagem e pesquisa
+│ ├─ layout.js # Layout raiz (Navbar + Footer)
+│ ├─ favoritos/page.js # Página de favoritos
+│ ├─ pokemon/[pokemonId]/page.js # Página dinâmica de detalhes
+│
+├─ components/
+│ ├─ Navbar.js
+│ ├─ Footer.js
+│ └─ Tabela.js
+│
+├─ styles/
+│ ├─ globals.css
+│ ├─ Navbar.module.css
+│ ├─ Footer.module.css
+│ ├─ Tabela.module.css
+│ ├─ Pokemon.module.css
+│ └─ favorito.css
+│
+└─ public/images/
+└─ pokebola.png
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tecnologias Utilizadas
 
-## Learn More
+- **Next.js 13** (App Router)
+- **React** (Hooks)
+- **CSS Modules**
+- **PokeAPI** para consumo de dados
 
-To learn more about Next.js, take a look at the following resources:
+## 📦 Instalação e Uso
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/vitorgabrielregis/wsFrontend-Fabrica25.2.git
+  s
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Instalação
 
-## Deploy on Vercel
+1. **Instale as dependências**  
+   ```bash
+   npm install
+   npm run dev
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🌟 Destaques do Código
+
+### Página inicial (`page.js`)
+- Faz requisição para a **PokeAPI** e envia os dados para o componente **Tabela**.
+
+### Tabela de Pokémon (`Tabela.js`)
+- Implementa **pesquisa em tempo real**.  
+- Botão de **favoritos** com persistência via **localStorage**.  
+- Exibe cada Pokémon com **nome**, **imagem** e **link de detalhes**.
+
+### Página dinâmica (`pokemon/[pokemonId]/page.js`)
+- Usa **generateStaticParams** para gerar páginas estáticas no build.  
+- Exibe informações detalhadas: **ID**, **tipo**, **peso** e **sprite**.
+
+### Favoritos (`favoritos/page.js`)
+- Lê os **favoritos** salvos no navegador.  
+- Lista os Pokémon selecionados pelo usuário.
+
