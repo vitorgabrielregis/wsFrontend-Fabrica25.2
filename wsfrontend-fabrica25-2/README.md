@@ -47,7 +47,7 @@ Uma aplicação **Pokédex** desenvolvida com **Next.js 13** que consome a [Poke
 1. **Clone o repositório**
    ```bash
    git clone https://github.com/vitorgabrielregis/wsFrontend-Fabrica25.2.git
-  s
+  
 
 ## 🛠️ Instalação
 
@@ -75,3 +75,4 @@ Uma aplicação **Pokédex** desenvolvida com **Next.js 13** que consome a [Poke
 - Lê os **favoritos** salvos no navegador.  
 - Lista os Pokémon selecionados pelo usuário.
 
+Link do projeto: https://ws-frontend-fabrica25-2-jnq5.vercel.app/
