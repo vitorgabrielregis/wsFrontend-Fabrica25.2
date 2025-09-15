@@ -43,6 +43,9 @@ Copiar código
 
 ---
 
+
+---
+
 ## 🛠️ Tecnologias Utilizadas
 
 - **Next.js 13** (App Router)  
@@ -58,34 +61,29 @@ Copiar código
 
 ```bash
 git clone https://github.com/vitorgabrielregis/wsFrontend-Fabrica25.2.git
-Instale as dependências
-bash
-Copiar código
-npm install
-Inicie o servidor de desenvolvimento
-bash
-Copiar código
-npm run dev
-🌟 Destaques do Código
-Página inicial (page.js)
-Faz requisição para a PokeAPI e envia os dados para o componente Tabela.
 
-Tabela de Pokémon (Tabela.js)
-Implementa pesquisa em tempo real.
+## 🌟 Destaques do Código
 
-Botão de favoritos com persistência via localStorage.
+### Página inicial (`page.js`)
+- Faz requisição para a **PokeAPI**.
+- Envia os dados para o componente **Tabela**.
 
-Exibe cada Pokémon com nome, imagem e link de detalhes.
+### Tabela de Pokémon (`Tabela.js`)
+- Implementa **pesquisa em tempo real**.
+- Botão de favoritos com persistência via **`localStorage`**.
+- Exibe cada Pokémon com **nome**, **imagem** e **link de detalhes**.
 
-Página dinâmica (pokemon/[pokemonId]/page.js)
-Usa generateStaticParams para gerar páginas estáticas no build.
+### Página dinâmica (`pokemon/[pokemonId]/page.js`)
+- Usa `generateStaticParams` para gerar páginas estáticas no build.
+- Exibe informações detalhadas: **ID**, **tipo**, **peso** e **sprite**.
 
-Exibe informações detalhadas: ID, tipo, peso e sprite.
+### Favoritos (`favoritos/page.js`)
+- Lê os favoritos salvos no navegador.
+- Lista os Pokémon selecionados pelo usuário.
 
-Favoritos (favoritos/page.js)
-Lê os favoritos salvos no navegador.
+---
 
-Lista os Pokémon selecionados pelo usuário.
+## 🔗 Link do Projeto
 
-🔗 Link do Projeto
-https://ws-frontend-fabrica25-2-jnq5.vercel.app/
+[https://ws-frontend-fabrica25-2-jnq5.vercel.app/](https://ws-frontend-fabrica25-2-jnq5.vercel.app/)
+
